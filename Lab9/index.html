@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display area of circle</title>
+</head>
+<body>
+    <script>
+        var r = parseFloat(window.prompt("Enter radius: "));    
+        //toFixed(): This method rounds a number to a specified number of decimal places.
+        var area = (Math.PI * r * r).toFixed(2);
+        // Math.PI: This constant represents the value of pi. 
+        document.write("Area: ", (Math.PI * r * r).toFixed(2));   
+        //document.write("Area is ", area);
+    </script>
+
+</body>
+</html>

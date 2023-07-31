@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>JS Functions</title>
+    </head>
+    
+    <body>
+        <script>
+            window.onload = function(){
+                getMarks(); //calling function 'getMarks()'
+            }
+                        
+            function getMarks(){
+                var total = 0;   //declaring variable
+                for(var i=0; i<5; i++){ // loop will be run five times
+                    var marks = parseInt(window.prompt("Enter your Marks: "));  //getting an user input and assign it 'marks' variable
+                    total = total + marks;
+                }
+                
+                var avg = total/5;
+                document.write("Total is ",total);
+                document.write("<br>");
+                document.write("Average is ",total/5);
+                document.write("<br>");
+                
+                var button = document.createElement("button");
+                button.innerHTML = "Grade";
+                //onclick is after mouse click
+                button.onclick = function(){
+                    if(average > 30){
+                        window.alert("Congratulations!");
+                    }
+                    else{
+                        window.alert("Sorry! Better luck next time.");
+                        
+                    }
+                };
+                document.body.appendChild(button);
+            }
+        </script>
+    </body>
+</html>

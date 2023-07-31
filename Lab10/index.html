@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>
+        Confirm Box
+    </title>
+</head>
+
+<body>
+    <button onclick="redirect()">GOOGLE</button>
+    <script>
+        function redirect(){  
+            var input = window.confirm("Are you sure you wanna visit Google?");
+            //confirm(): This function returns a boolean value indicating whether the user clicked "Yes" or "No".
+            if(input){
+                window.location.href="https://google.com";
+            }
+            else
+            window.alert("You decided to stay!");
+        }
+    </script>
+</body>
+</html>
